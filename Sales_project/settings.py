@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'treqktnk&-03$otc7%fxsw2a7ls%n&c2cq5#4p7n3o=ckvas@$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','salesdj.herokuapp.com']
+ALLOWED_HOSTS = [ ]
 
 
 # Application definition
@@ -135,3 +136,7 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+
+django_heroku.settings(locals())
+
