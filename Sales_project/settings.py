@@ -82,10 +82,10 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "sales_project",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "HOST": "localhost"
+        'NAME': "postgresql-asymmetrical-96853",
+        "USER": "mmtjouosvutlik",
+        "PASSWORD": "f942279a1384d271e55913ac32c5c33b1e290d0cf75ef25421d992019b62abbb",
+        "HOST": "ec2-35-168-145-180.compute-1.amazonaws.com"
     }
 }
 
